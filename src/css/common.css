@@ -22,3 +22,18 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+/* Task-3 */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+ul {
+  list-style: none;
+
+}
+img {
+  width: 395px;
+  height: 100%;
+}
