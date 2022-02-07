@@ -14,9 +14,8 @@ inputElement.addEventListener('blur', eventHandler);
 
 function eventHandler(event) {
     const minLength = inputElement.getAttribute('data-length');
-    console.log(inputElement.value.length, '<', minLength);
 
-    if (inputElement.value.length < minLength) {
+    if (inputElement.value.length != minLength) {
         console.log('invalid');
         inputElement.className = 'invalid';
     } else {
