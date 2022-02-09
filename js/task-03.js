@@ -15,13 +15,11 @@ const images = [
 
 
 const pictures = document.querySelector(".gallery");
+console.log(pictures);
 
-images.forEach(img => {
-  pictures.insertAdjacentHTML(
-    "beforeend",
-    `<li class="gallery-list flex-container"><img src="${img.url}" alt="${img.alt} width="370"/></li>`
-  )
-});
+ const picturesStrings = images.map(img => `<li class="gallery-list flex-container"><img src="${img.url}" alt="${img.alt} width="370"/></li>`).join('');
+ pictures.insertAdjacentHTML("beforeend", picturesStrings);
+ 
 
 /* Напиши скрипт для создания галереи изображений по массиву данных. В HTML есть список ul.gallery.
 

@@ -2,7 +2,7 @@ const ingredients = [
   'Potatoes',
   'Mushrooms',
   'Garlic',
-  'Tomatos',
+  'Tomatoes',
   'Herbs',
   'Condiments',
 ];
@@ -15,12 +15,11 @@ const allIngredients = ingredients.map(
     const listElement = document.createElement("li");
     listElement.classList.add("item");
     listElement.textContent = ingredient;
-    allElements.append(listElement);
-    return ingredient;
+    return listElement;
   }
 );
 
-console.log(allIngredients);
+allElements.append(...allIngredients);
 
 /* Напиши скрипт, который для каждого элемента массива ingredients:
 Создаст отдельный элемент <li>. 
